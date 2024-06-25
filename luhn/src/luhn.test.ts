@@ -7,6 +7,12 @@ describe('CreditCardValidator', () => {
       const cardType = CreditCardValidator.getCardType(cardNumber);
       expect(cardType).toBe('VISA');
     });
+
+    it('should return MASTERCARD for a valid MasterCard number', () => {
+      const cardNumber = '5555555555554444';
+      const cardType = CreditCardValidator.getCardType(cardNumber);
+      expect(cardType).toBe('MASTERCARD');
+    });
   });
 
 });
