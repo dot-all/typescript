@@ -29,5 +29,11 @@ describe('CreditCardValidator', () => {
       expect(cardType).toBe('VISA');
     });
 
+    it('should return valid and MASTERCARD for a valid MasterCard number', () => {
+      const cardNumber = '5555555555554444';
+      const { isValid, cardType } = CreditCardValidator.isValidCardNumber(cardNumber);
+      expect(isValid).toBe(true);
+      expect(cardType).toBe('MASTERCARD');
+    });
   });
 });
