@@ -21,4 +21,13 @@ describe('CreditCardValidator', () => {
     });
   });
 
+  describe('isValidCardNumber', () => {
+    it('should return valid and VISA for a valid Visa card number', () => {
+      const cardNumber = '4111111111111111';
+      const { isValid, cardType } = CreditCardValidator.isValidCardNumber(cardNumber);
+      expect(isValid).toBe(true);
+      expect(cardType).toBe('VISA');
+    });
+
+  });
 });
