@@ -13,6 +13,12 @@ describe('CreditCardValidator', () => {
       const cardType = CreditCardValidator.getCardType(cardNumber);
       expect(cardType).toBe('MASTERCARD');
     });
+
+    it('should return UNKNOWN CARD TYPE for an invalid card number', () => {
+      const cardNumber = '1234567890123456';
+      const cardType = CreditCardValidator.getCardType(cardNumber);
+      expect(cardType).toBe('UNKNOWN CARD TYPE');
+    });
   });
 
 });
