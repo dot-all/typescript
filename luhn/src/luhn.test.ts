@@ -35,5 +35,12 @@ describe('CreditCardValidator', () => {
       expect(isValid).toBe(true);
       expect(cardType).toBe('MASTERCARD');
     });
+
+    it('should return invalid and UNKNOWN CARD TYPE for an invalid card number', () => {
+      const cardNumber = '1234567890123456';
+      const { isValid, cardType } = CreditCardValidator.isValidCardNumber(cardNumber);
+      expect(isValid).toBe(false);
+      expect(cardType).toBe('UNKNOWN CARD TYPE');
+    });
   });
 });
