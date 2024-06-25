@@ -42,5 +42,12 @@ describe('CreditCardValidator', () => {
       expect(isValid).toBe(false);
       expect(cardType).toBe('UNKNOWN CARD TYPE');
     });
+
+    it('should return invalid and UNKNOWN CARD TYPE for a card number with non-digit characters', () => {
+      const cardNumber = '4111 1111 1111 111a';
+      const { isValid, cardType } = CreditCardValidator.isValidCardNumber(cardNumber);
+      expect(isValid).toBe(false);
+      expect(cardType).toBe('UNKNOWN CARD TYPE');
+    });
   });
 });
