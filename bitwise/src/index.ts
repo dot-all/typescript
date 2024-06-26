@@ -1,5 +1,5 @@
 // Base 2
-const binaryBase2 = (number: number): Array<number> => {
+export const binaryBase2 = (number: number): Array<number> => {
   let bits = [];
   
   while (number > 0) {
@@ -19,7 +19,7 @@ console.log(`The number ${number} in binary base 2 is: ${numberInBinary}`);
 
 // Bitwise
 
-const binaryBitwise = (number: number): Array<number> => {
+export const binaryBitwise = (number: number): Array<number> => {
   let bits = [];
   
   for (let b = 31; b >= 0 ; b--) {
