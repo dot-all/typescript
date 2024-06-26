@@ -1,0 +1,25 @@
+{
+  "name": "bitwise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "tsx": "4.15.7"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "7.24.7",
+    "@jest/globals": "29.7.0",
+    "@types/jest": "29.5.12",
+    "@types/node": "20.14.9",
+    "jest": "29.7.0",
+    "ts-jest": "29.1.5"
+  }
+}
