@@ -1,1 +1,2 @@
-# TypeScript Mini-Projects, Algorithms, and Challenges Repository
+# TypeScript Mini-Projects, Algorithms, and Challenges
+
