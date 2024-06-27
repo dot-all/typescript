@@ -3,3 +3,4 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
 - Luhn: Implementation of the Luhn algorithm, commonly used for credit card number validation.
 - Bitwise: Examples and applications showcasing bitwise operations in TypeScript.
   - Decimal to Binary Conversion: Learn how to convert decimal numbers into binary using bitwise operations.
+  - Bit Manipulation: Explore examples of manipulating individual bits to perform tasks such as setting, clearing, and toggling specific bit positions.
