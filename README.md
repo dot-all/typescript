@@ -1,3 +1,1 @@
-# typescript
-
-content table
+# TypeScript Mini-Projects, Algorithms, and Challenges Repository
