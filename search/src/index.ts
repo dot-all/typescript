@@ -187,3 +187,13 @@ class BTree {
     }
 }
 
+// Example usage
+const bTree = new BTree(3); // Create a B-Tree with minimum degree 3
+
+// Insert keys into the B-Tree (not shown here, assumed already populated)
+
+// Search for a key
+const keyToSearch = 10;
+const isFound = bTree.search(keyToSearch);
+console.log(`Key ${keyToSearch} found in B-Tree: ${isFound}`);
+
