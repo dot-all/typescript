@@ -134,3 +134,56 @@ if (foundPerson) {
   console.log("Person not found");
 }
 
+
+// Define a Node class for B-Tree
+class BTreeNode {
+    keys: number[];
+    children: BTreeNode[];
+    constructor(keys: number[]) {
+        this.keys = keys;
+        this.children = [];
+    }
+}
+
+
+// Define the B-Tree class
+class BTree {
+    root: BTreeNode | null;
+    degree: number; // Minimum degree (defines the range for number of keys)
+
+    constructor(degree: number) {
+        this.root = null;
+        this.degree = degree;
+    }
+
+    /**
+     * Search for a key in the B-Tree.
+     * @param key The key to search for.
+     * @returns true if the key is found, false otherwise.
+     */
+    search(key: number): boolean {
+        return this.searchRecursive(this.root, key);
+    }
+
+    // Recursive function to perform search
+    private searchRecursive(node: BTreeNode | null, key: number): boolean {
+        if (node === null) {
+            return false;
+        }
+
+        // Find the first key greater than or equal to key
+        let i = 0;
+        while (i < node.keys.length && key > node.keys[i]) {
+            i++;
+        }
+
+        // If found, return true
+        if (i < node.keys.length && key === node.keys[i]) {
+            return true;
+        }
+
+        // Recursively search in the appropriate child
+        return this.searchRecursive(node.children[i], key);
+    }
+}
+
