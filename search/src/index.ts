@@ -197,3 +197,49 @@ const keyToSearch = 10;
 const isFound = bTree.search(keyToSearch);
 console.log(`Key ${keyToSearch} found in B-Tree: ${isFound}`);
 
+
+
+// Definition of a graph using adjacency list
+class Graph {
+    private adjacencyList: Map<number, number[]>;
+
+    constructor() {
+        this.adjacencyList = new Map();
+    }
+
+    // Function to add an edge between two vertices
+    addEdge(vertex1: number, vertex2: number): void {
+        if (!this.adjacencyList.has(vertex1)) {
+            this.adjacencyList.set(vertex1, []);
+        }
+        if (!this.adjacencyList.has(vertex2)) {
+            this.adjacencyList.set(vertex2, []);
+        }
+        this.adjacencyList.get(vertex1)?.push(vertex2);
+        this.adjacencyList.get(vertex2)?.push(vertex1);
+    }
+
+    // Depth-First Search (DFS) algorithm
+    dfs(startVertex: number): number[] {
+        const visited: Set<number> = new Set();
+        const result: number[] = [];
+
+        // Helper function for recursive DFS traversal
+        const dfsRecursive = (vertex: number) => {
+            visited.add(vertex); // Mark the vertex as visited
+            result.push(vertex); // Add vertex to result array
+
+            // Get neighbors of the current vertex
+            const neighbors = this.adjacencyList.get(vertex) || [];
+            for (const neighbor of neighbors) {
+                if (!visited.has(neighbor)) {
+                    dfsRecursive(neighbor); // Recursively visit unvisited neighbors
+                }
+            }
+        };
+
+        dfsRecursive(startVertex); // Start DFS from the specified vertex
+        return result; // Return the DFS traversal path
+    }
+}
+
