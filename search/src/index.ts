@@ -57,13 +57,54 @@ function binarySearch<T>(array: T[], target: T): number | undefined {
   return undefined;
 }
 
-const numbers: number[] = [10, 22, 34, 45, 56, 78, 91, 100];
-const targetElement: number = 45;
+// const numbers: number[] = [10, 22, 34, 45, 56, 78, 91, 100];
+// const targetElement: number = 45;
 
-const index = binarySearch(numbers, targetElement);
+// const index = binarySearch(numbers, targetElement);
 
-if (index !== undefined) {
-  console.log(`The element ${targetElement} was found at index ${index}`);
-} else {
-  console.log(`The element ${targetElement} was not found in the array`);
+// if (index !== undefined) {
+//   console.log(`The element ${targetElement} was found at index ${index}`);
+// } else {
+//   console.log(`The element ${targetElement} was not found in the array`);
+// }
+
+
+
+/**
+ * Implementa la búsqueda por hash para encontrar un elemento en una tabla hash.
+ *
+ * @param {HashTable<T, U>} hashTable La tabla hash donde se realizará la búsqueda.
+ * @param {T} key La clave del elemento a buscar.
+ * @returns {U | undefined} El valor asociado con la clave si se encuentra, o `undefined` si no se encuentra.
+ *
+ * Precondición: La tabla hash debe estar inicializada y contener elementos.
+ */
+
+
+class HashTable<T, U> {
+  private table: Map<T, U>;
+
+  constructor() {
+    this.table = new Map<T, U>();
+  }
+
+  set(key: T, value: U): void {
+    this.table.set(key, value);
+  }
+
+  get(key: T): U | undefined {
+    return this.table.get(key);
+  }
+
+  has(key: T): boolean {
+    return this.table.has(key);
+  }
+
+  delete(key: T): void {
+    this.table.delete(key);
+  }
+}
+
+function hashSearch<T, U>(hashTable: HashTable<T, U>, key: T): U | undefined {
+  return hashTable.get(key);
 }
