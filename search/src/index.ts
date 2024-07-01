@@ -108,3 +108,29 @@ class HashTable<T, U> {
 function hashSearch<T, U>(hashTable: HashTable<T, U>, key: T): U | undefined {
   return hashTable.get(key);
 }
+
+
+interface Person {
+  name: string;
+  age: number;
+}
+
+const people: HashTable<string, Person> = new HashTable();
+
+const person1: Person = { name: "John Doe", age: 30 };
+const person2: Person = { name: "Jane Doe", age: 25 };
+const person3: Person = { name: "Peter Jones", age: 40 };
+
+people.set("John Doe", person1);
+people.set("Jane Doe", person2);
+people.set("Peter Jones", person3);
+
+// Search for a person by name
+const foundPerson: Person | undefined = hashSearch(people, "Jane Doe");
+
+if (foundPerson) {
+  console.log(`Found person: ${foundPerson.name}, age: ${foundPerson.age}`);
+} else {
+  console.log("Person not found");
+}
+
