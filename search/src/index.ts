@@ -243,3 +243,14 @@ class Graph {
     }
 }
 
+const graph = new Graph();
+graph.addEdge(0, 1);
+graph.addEdge(0, 2);
+graph.addEdge(1, 3);
+graph.addEdge(2, 4);
+graph.addEdge(2, 5);
+
+const startVertex = 0;
+const dfsResult = graph.dfs(startVertex);
+console.log(`DFS result starting from vertex ${startVertex}:`, dfsResult);
+
