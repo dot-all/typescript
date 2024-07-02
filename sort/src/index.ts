@@ -83,3 +83,6 @@ function quickSort(arr: number[]): number[] {
 
   return [...quickSort(left), ...middle, ...quickSort(right)]; // Concatena los resultados
 }
+
+const quickSortedArray = quickSort([3, 6, 8, 10, 1, 2, 1]);
+console.log("Quick Sorted Array:", quickSortedArray);
