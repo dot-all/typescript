@@ -64,3 +64,22 @@ function insertionSort(arr: number[]): number[] {
 
 const insertionSortedArray = insertionSort([12, 11, 13, 5, 6]);
 console.log("Insertion Sorted Array:", insertionSortedArray);
+
+
+/**
+ * Ordena una lista de números utilizando el algoritmo Quick Sort.
+ * @param arr - Arreglo de números a ordenar.
+ * @returns Arreglo de números ordenado.
+ */
+function quickSort(arr: number[]): number[] {
+  if (arr.length <= 1) {
+    return arr; // Caso base: arreglo de longitud 1 o 0 ya está ordenado
+  }
+
+  const pivot = arr[Math.floor(arr.length / 2)]; // Selecciona el pivote
+  const left = arr.filter(x => x < pivot); // Elementos menores que el pivote
+  const right = arr.filter(x => x > pivot); // Elementos mayores que el pivote
+  const middle = arr.filter(x => x === pivot); // Elementos iguales al pivote
+
+  return [...quickSort(left), ...middle, ...quickSort(right)]; // Concatena los resultados
+}
