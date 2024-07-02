@@ -61,3 +61,6 @@ function insertionSort(arr: number[]): number[] {
   }
   return arr;
 }
+
+const insertionSortedArray = insertionSort([12, 11, 13, 5, 6]);
+console.log("Insertion Sorted Array:", insertionSortedArray);
