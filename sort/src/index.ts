@@ -18,3 +18,22 @@ function bubbleSort(arr: number[]): number[] {
 
 const bubbleSortedArray = bubbleSort([64, 34, 25, 12, 22, 11, 90]);
 console.log("Bubble Sorted Array:", bubbleSortedArray);
+
+/**
+ * Ordena una lista de números utilizando el algoritmo Selection Sort.
+ * @param arr - Arreglo de números a ordenar.
+ * @returns Arreglo de números ordenado.
+ */
+function selectionSort(arr: number[]): number[] {
+  let n = arr.length;
+  for (let i = 0; i < n - 1; i++) {
+    let minIndex = i;
+    for (let j = i + 1; j < n; j++) {
+      if (arr[j] < arr[minIndex]) {
+        minIndex = j; // Encuentra el índice del elemento mínimo
+      }
+    }
+    [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]]; // Intercambio de elementos
+  }
+  return arr;
+}
