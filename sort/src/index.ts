@@ -128,3 +128,6 @@ function merge(left: number[], right: number[]): number[] {
 
   return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex)); // Combina los resultados
 }
+
+const mergeSortedArray = mergeSort([38, 27, 43, 3, 9, 82, 10]);
+console.log("Merge Sorted Array:", mergeSortedArray);
