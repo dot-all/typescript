@@ -15,3 +15,6 @@ function bubbleSort(arr: number[]): number[] {
   }
   return arr;
 }
+
+const bubbleSortedArray = bubbleSort([64, 34, 25, 12, 22, 11, 90]);
+console.log("Bubble Sorted Array:", bubbleSortedArray);
