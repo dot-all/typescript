@@ -131,3 +131,5 @@ function merge(left: number[], right: number[]): number[] {
 
 const mergeSortedArray = mergeSort([38, 27, 43, 3, 9, 82, 10]);
 console.log("Merge Sorted Array:", mergeSortedArray);
+
+//TODO: Añadir Test con Jest para cada función
