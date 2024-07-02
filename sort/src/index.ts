@@ -19,6 +19,7 @@ function bubbleSort(arr: number[]): number[] {
 const bubbleSortedArray = bubbleSort([64, 34, 25, 12, 22, 11, 90]);
 console.log("Bubble Sorted Array:", bubbleSortedArray);
 
+
 /**
  * Ordena una lista de números utilizando el algoritmo Selection Sort.
  * @param arr - Arreglo de números a ordenar.
@@ -40,3 +41,23 @@ function selectionSort(arr: number[]): number[] {
 
 const selectionSortedArray = selectionSort([64, 25, 12, 22, 11]);
 console.log("Selection Sorted Array:", selectionSortedArray);
+
+
+/**
+ * Ordena una lista de números utilizando el algoritmo Insertion Sort.
+ * @param arr - Arreglo de números a ordenar.
+ * @returns Arreglo de números ordenado.
+ */
+function insertionSort(arr: number[]): number[] {
+  let n = arr.length;
+  for (let i = 1; i < n; i++) {
+    let key = arr[i];
+    let j = i - 1;
+    while (j >= 0 && arr[j] > key) {
+      arr[j + 1] = arr[j]; // Mueve el elemento hacia la derecha
+      j = j - 1;
+    }
+    arr[j + 1] = key; // Inserta el elemento en la posición correcta
+  }
+  return arr;
+}
