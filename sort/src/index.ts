@@ -86,3 +86,45 @@ function quickSort(arr: number[]): number[] {
 
 const quickSortedArray = quickSort([3, 6, 8, 10, 1, 2, 1]);
 console.log("Quick Sorted Array:", quickSortedArray);
+
+
+/**
+ * Ordena una lista de números utilizando el algoritmo Merge Sort.
+ * @param arr - Arreglo de números a ordenar.
+ * @returns Arreglo de números ordenado.
+ */
+function mergeSort(arr: number[]): number[] {
+  if (arr.length <= 1) {
+    return arr; // Caso base: arreglo de longitud 1 o 0 ya está ordenado
+  }
+
+  const middle = Math.floor(arr.length / 2); // Encuentra el punto medio
+  const left = arr.slice(0, middle); // Divide la lista en dos mitades
+  const right = arr.slice(middle);
+
+  return merge(mergeSort(left), mergeSort(right)); // Combina las dos mitades ordenadas
+}
+
+/**
+ * Combina dos arreglos ordenados en uno solo ordenado.
+ * @param left - Arreglo ordenado de la izquierda.
+ * @param right - Arreglo ordenado de la derecha.
+ * @returns Arreglo combinado y ordenado.
+ */
+function merge(left: number[], right: number[]): number[] {
+  let result: number[] = [];
+  let leftIndex = 0;
+  let rightIndex = 0;
+
+  while (leftIndex < left.length && rightIndex < right.length) {
+    if (left[leftIndex] < right[rightIndex]) {
+      result.push(left[leftIndex]);
+      leftIndex++;
+    } else {
+      result.push(right[rightIndex]);
+      rightIndex++;
+    }
+  }
+
+  return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex)); // Combina los resultados
+}
