@@ -5,4 +5,5 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Decimal to Binary Conversion: Convert decimals to binary base 2.
   - Bit Manipulation: Convert decimals to base binary to bits and bitwise operators.
 - Search: Examples and applications of search algorithms in TypeScript.
+  - Linear Search
 - Sort:
