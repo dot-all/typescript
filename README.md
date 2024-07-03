@@ -5,7 +5,7 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Decimal to Binary Conversion: Convert decimals to binary base 2.
   - Bit Manipulation: Convert decimals to base binary to bits and bitwise operators.
 - Search: Examples and applications of search algorithms in TypeScript.
-  - Linear search.
+  - Linear search: The linear search algorithm traverses each element of a list one by one until it finds the desired element or reaches the end of the list.
   - Binary search.
   - Hash table.
   - BTree.
