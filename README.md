@@ -8,4 +8,5 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Linear search.
   - Binary search.
   - Hash table.
+  - BTree.
 - Sort:
