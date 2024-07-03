@@ -9,4 +9,5 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Binary search.
   - Hash table.
   - BTree.
+    Graph. 
 - Sort:
