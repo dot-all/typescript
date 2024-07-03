@@ -4,4 +4,5 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
 - Bitwise: Examples and applications showcasing bitwise operations in TypeScript.
   - Decimal to Binary Conversion: Convert decimals to binary base 2.
   - Bit Manipulation: Convert decimals to base binary to bits and bitwise operators.
-- Search: 
+- Search:
+- Sort:
