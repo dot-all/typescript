@@ -7,4 +7,5 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
 - Search: Examples and applications of search algorithms in TypeScript.
   - Linear search.
   - Binary search.
+  - Hash table.
 - Sort:
