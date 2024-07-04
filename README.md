@@ -12,3 +12,4 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Graph: Graph search algorithms explore nodes and edges to find paths or specific nodes, using techniques like BFS or DFS.
 - Sort:
   - Bubble sort.
+  - Selection sort.
