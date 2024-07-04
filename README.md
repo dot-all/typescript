@@ -15,4 +15,5 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Selection sort.
   - Insertion sort.
   - Quick sort.
+  - Merge sort.
   
