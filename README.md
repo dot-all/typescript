@@ -14,4 +14,5 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Bubble sort.
   - Selection sort.
   - Insertion sort.
+  - Quick sort.
   
