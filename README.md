@@ -9,5 +9,5 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Binary search: The binary search algorithm halves a sorted list repeatedly to find a target value.
   - Hash table: The hash table search algorithm uses a hash function to map keys to indices, allowing for fast retrieval of values.
   - BTree: The B-tree search algorithm navigates a balanced tree structure to efficiently locate keys, ensuring logarithmic time complexity for insertions, deletions, and searches.
-  - Graph:
+  - Graph: Graph search algorithms explore nodes and edges to find paths or specific nodes, using techniques like BFS or DFS.
 - Sort:
