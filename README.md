@@ -8,6 +8,6 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Linear search: The linear search algorithm traverses each element of a list one by one until it finds the desired element or reaches the end of the list.
   - Binary search: The binary search algorithm halves a sorted list repeatedly to find a target value.
   - Hash table: The hash table search algorithm uses a hash function to map keys to indices, allowing for fast retrieval of values.
-  - BTree.
-    Graph. 
+  - BTree: 
+  - Graph:
 - Sort:
