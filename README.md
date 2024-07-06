@@ -19,3 +19,4 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Merge sort: The merge sort algorithm recursively divides the list into halves, sorts each half, and then merges the sorted halves to produce a sorted list.
   ## Design Patterns
   - Singleton.
+  - Factory Method.
