@@ -11,7 +11,7 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - BTree: The B-tree search algorithm navigates a balanced tree structure to efficiently locate keys, ensuring logarithmic time complexity for insertions, deletions, and searches.
   - Graph: Graph search algorithms explore nodes and edges to find paths or specific nodes, using techniques like BFS or DFS.
 - Sort:
-  - Bubble sort.
+  - Bubble sort: The bubble sort algorithm repeatedly swaps adjacent elements if they are in the wrong order, bubbling the largest unsorted element to its correct position in each pass.
   - Selection sort.
   - Insertion sort.
   - Quick sort.
