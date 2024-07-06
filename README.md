@@ -1,5 +1,6 @@
 # TypeScript
 Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. Here you will find a variety of implementations designed to enhance your skills in TypeScript. Currently featured projects include:
+## Algorithms
 - Luhn: Implementation of the Luhn algorithm, commonly used for credit card number validation.
 - Bitwise: Examples and applications showcasing bitwise operations in TypeScript.
   - Decimal to Binary Conversion: Convert decimals to binary base 2.
@@ -16,5 +17,5 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Insertion sort: The insertion sort algorithm builds a sorted list by repeatedly inserting each new element into its correct position within the already sorted portion.
   - Quick sort: The quicksort algorithm sorts a list by selecting a pivot element, partitioning the remaining elements into sublists of those less than and greater than the pivot, and recursively sorting the sublists.
   - Merge sort: The merge sort algorithm recursively divides the list into halves, sorts each half, and then merges the sorted halves to produce a sorted list.
-    
+  
   
