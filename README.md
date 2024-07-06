@@ -12,7 +12,7 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Graph: Graph search algorithms explore nodes and edges to find paths or specific nodes, using techniques like BFS or DFS.
 - Sort:
   - Bubble sort: The bubble sort algorithm repeatedly swaps adjacent elements if they are in the wrong order, bubbling the largest unsorted element to its correct position in each pass.
-  - Selection sort.
+  - Selection sort: The selection sort algorithm repeatedly selects the smallest remaining element and swaps it with the current position, sorting the list incrementally.
   - Insertion sort.
   - Quick sort.
   - Merge sort.
