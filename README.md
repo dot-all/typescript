@@ -18,5 +18,5 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Quick sort: The quicksort algorithm sorts a list by selecting a pivot element, partitioning the remaining elements into sublists of those less than and greater than the pivot, and recursively sorting the sublists.
   - Merge sort: The merge sort algorithm recursively divides the list into halves, sorts each half, and then merges the sorted halves to produce a sorted list.
   ## Design Patterns
-  - Singleton.
+  - Singleton: The Singleton pattern ensures a class has only one instance and provides a global access point to it, useful for centralized management of resources.
   - Factory Method.
