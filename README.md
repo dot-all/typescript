@@ -21,6 +21,6 @@ Welcome to the TypeScript Mini-Projects, Algorithms, and Challenges repository. 
   - Singleton: The Singleton pattern ensures a class has only one instance and provides a global access point to it, useful for centralized management of resources.
   - Factory Method: The Factory Method pattern defines an interface for creating objects, allowing subclasses to alter the type of objects that will be created.
   - Builder: The Builder pattern separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
-  - Prototype.
+  - Prototype: The Prototype pattern creates new objects by copying an existing object, known as the prototype, allowing for efficient object creation.
 
 ## Other
